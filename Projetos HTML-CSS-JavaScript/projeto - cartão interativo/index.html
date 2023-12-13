@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cartão Interativo</title>
+    <link rel="shortcut icon" href="imagens/cartaofavicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="estilo-queries.css">
+</head>
+<body>
+    <main>
+        <section id="sec1"> <!-- sessão dos cartões-->
+            <div id="cartao1">
+                <div id="faixa1"></div>
+                <div id="faixa2">
+                    <p id="tccvc">000</p>
+                </div>
+                <div id="linhas">
+                    <p>_____ __ __ _</p>
+                    <p> __ ___ __ _</p>
+                    <p>_ __ __ ______</p>
+                </div>
+            </div>
+            <div id="cartao2">
+                <div id="circ">
+                    <div id="circ1"></div>
+                    <div id="circ2"></div>
+                </div>
+                <div id="cardnum">
+                    <p id="numcard1">0000 0000 0000 0000</p>
+                </div>
+                <div id="namet">
+                    <p id="nametit">Maria Rosa</p>
+                    <p id="mesano">00/00</p>
+                </div>
+            </div>
+        </section>
+        <section id="sec2"> <!-- sessão de dados-->
+            <div id="dados"> <!-- Input de dados pessoais -->
+                <div id="pessoais">
+                    <form id="nome">
+                        <p>
+                            <label class="letras" for="tname">NOME DO TITULAR</label><br>
+                            <input type="text" name="tname" id="tname" required placeholder="Ex: Maria Rosa" oninput="inserir()">
+                        </p>
+                    </form>
+                    <form id="cartao">
+                        <p>
+                            <label class="letras" for="cnumber">NÚMERO DO CARTÃO</label><br>
+                            <input type="number" name="cnumber" id="cnumber" required placeholder="(Sem espaços)Ex: 1234567891230000" maxlength="16" oninput="dados(this.value)">
+                        </p>
+                    </form>
+                </div>
+                <div id="data"> <!-- Input de Datas e Dados -->
+                   <form id="mes" method="get" autocomplete="on">
+                    <p>
+                        <label class="letras" for="dmes">VALIDADE (M/A)</label>
+                        <input type="number" name="dmes" id="dmes" placeholder="Mês" required style="width: 55px;" oninput="inserir()">
+                        <input type="number" name="dano" id="dano" placeholder="Ano" required style="width: 55px;" oninput="inserir()">
+                    </p>
+                   </form>
+                   <form id="cvc" method="get" autocomplete="on">
+                    <p>
+                        <label class="letras" for="tcvc">CVC</label><br>
+                        <input type="number" name="tcvc" id="tcvc" placeholder="Código de Verificação" oninput="inserir()">
+                    </p>
+                   </form> 
+                </div>
+                <div id="telaconfirm">
+                    <img src="imagens/icon-complete.png" alt="fotoconfirm">
+                    <h2 id="agradec">AGRADEÇEMOS!</h2>
+                    <p id="insedados">Seus dados foram adicionados</p>
+                </div>
+                <div id="confirm"> <!-- Botão de Confirmação -->
+                    <button onclick="confirmar()">Confirmar</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

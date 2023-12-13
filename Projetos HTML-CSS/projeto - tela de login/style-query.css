@@ -1,0 +1,64 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 768px) and (max-width: 992px) { /*TABLET*/
+
+    div#imagem {
+        height: 140px;
+        width: 140px;
+
+        position: absolute;
+        top: 20%;
+        left: 37%;
+    }
+
+    div#login > p > input#isubmit {
+        width: 62%;
+    }
+}
+
+@media screen and (min-width: 993px) and (max-width: 1200px) { /*DESKTOP*/
+
+    section >div#imagem {
+        height: 140px;
+        width: 140px;
+
+        position: absolute;
+        top: 20%;
+        left: 39%;
+    }
+
+    section > p {
+        display: flex;
+        justify-content: center;
+    }
+
+    div#login > form > input {
+        width: 90%;
+    }
+}
+
+@media screen and (min-width: 1201px) {
+
+    section {
+        width: 570px;
+    }
+
+    section >div#imagem {
+        height: 140px;
+        width: 140px;
+
+        position: absolute;
+        top: 20%;
+        left: 39%;
+    }
+
+    section > p {
+        display: flex;
+        justify-content: center;
+    }
+
+    div#login > form > input {
+        width: 88%;
+    }
+    
+}

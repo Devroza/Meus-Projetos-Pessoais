@@ -1,0 +1,5 @@
+div#imagem -  display: block
+div#textos - display: block
+div#avalicao - display: flex
+
+div#agracimento - display: flex

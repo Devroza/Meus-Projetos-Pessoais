@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avaliações</title>
+    <link rel="shortcut icon" href="imagens/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <section>
+            <div id="imagem">
+                <div id="fundo-estrela"><img src="imagens/icon-star.svg" alt="ícone estrela"></div>
+            </div>
+            <div id="textos">
+                <h2>Que nota nos daria?</h2>
+                <p>Por favor nos deixe saber o quanto conseguimos agradra-lo(a) através de sua avaliação. Qualquer feedback é de extrema importância para nos ajudar a aprimorar nossos serviços.</p>
+            </div>
+            <div id="avaliacao">
+                <div id="notas">
+                    <div id="nota1" class="nota" onclick="marked1()">1</div>
+                    <div id="nota2" class="nota" onclick="marked2()">2</div>
+                    <div id="nota3" class="nota" onclick="marked3()">3</div>
+                    <div id="nota4" class="nota" onclick="marked4()">4</div>
+                    <div id="nota5" class="nota" onclick="marked5()">5</div>
+                </div>
+                <input id="botao-enviar" type="button" value="ENVIAR" onclick="enviar()">
+            </div>
+            <!-- Tela de Agradecimento após o envio da nota -->
+            <div id="agradecimento">
+                <img src="imagens/illustration-thank-you.svg" alt="foto-mini-celular">
+                <div id="nota-final"><p>Você Selecionou a Nota 4 de 5</p></div>
+                <div id="textos-finais">
+                    <h3>Agradeçemos!</h3>
+                    <p>Nós valorizamos muito a sua avaliação. Caso precise qualquer outro tipo de suporte. Não hesite em nos contatar</p>
+                </div>
+            
+            </div>
+            
+        </section>
+    </main>
+
+    <script src="script.js">
+
+    </script>
+</body>
+</html>

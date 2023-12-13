@@ -1,0 +1,135 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+:root {
+    --cor-fundo: #BDC0F2;
+    --cor-letras: #F2C641;
+    --cores-login: #F29E38;
+    --cor-login: #9C8DA2;
+    --cor-secao: #301840;
+
+    --font-principal: 'Josefin Sans', sans-serif;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+
+    background-color: var(--cor-fundo) ;
+
+    position: relative;
+}
+
+section {
+    background-color: var(--cor-secao);
+
+    width: 70%;
+    height: 70%;
+
+    position: absolute;
+    top: 48%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    border-radius: 35px;
+}
+
+p {
+    width: 57%;
+    height: 30%;
+
+    padding-top: 35px;
+    padding-left: 25px;
+
+    margin: auto;
+    text-align: left;
+
+    font-family: var(--font-principal);
+    font-weight: bolder;
+    color: var(--cor-letras);
+}
+
+div#imagem {
+   height: 120px;
+   width: 120px;
+
+   background-color: aliceblue;
+   background-image: url(imagens/astronautamenor.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+
+   position: absolute;
+top: 23%;
+   left: 34%;
+
+   border-radius: 20%;
+   box-shadow: 2px 2px 5px 0px var(--cor-fundo);
+}
+
+div#login {
+    height: 39%;
+    width: 70%;
+
+    background-color: var(--cor-login);
+
+    position: absolute;
+
+    top: 55%;
+    left: 16%;
+
+    border-radius: 15px;
+}
+
+div#login > h3 {
+    padding-top: 10px;
+    text-align: center;
+
+    font-family: var(--font-principal);
+    font-size: 1.5em;
+    color: var(--cores-login);
+    
+    text-shadow: 1px 1px 3px;
+    
+}
+
+div#login > form {
+    padding-top: 10px;
+    padding-left: 40px;
+
+    font-family: var(--font-principal);
+}
+
+div#login > form > input {
+    height: 23px;
+    width: 80%;
+
+    margin-top: 2px;
+    margin-bottom: 2px;
+
+    border-radius: 5px;
+}
+
+
+div#login > p > input#isubmit {
+    height: 15%;
+    width: 67%;
+
+    position: absolute;
+    left: 17%;
+    top: 79%;
+
+    font-family: var(--font-principal);
+    font-weight: bolder;
+
+    border-radius: 5px;
+    border-style: none;
+    background-color: var(--cores-login);
+
+    box-shadow: 0px 3px 20px 0px #F29E38;
+}

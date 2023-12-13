@@ -1,0 +1,357 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+:root {
+    /* Cores topo/lateral tela/mobile */
+--cor1: #53233A; 
+--cor2: #332C59; 
+--cor3: #21092F;
+
+/* Cores Cartão */
+
+--roxoclaro: #6344F9;
+--roza: #AC42EB; 
+--laranja: #E3746D; 
+--azul: #6791E0; 
+--roxoescuro: #600595; 
+
+/* Cores diversas */
+
+--branco: #FFFFFF;
+--cinzaclaro: #D2D3D8;
+--cinzaescuro: #AEB5BD;
+--cinzafaixa: #2F2F2F;
+--roxoconfirmar: #220930;
+
+/* Fonte Utilizada */
+
+--fonte-principal: 'Space Grotesk', sans-serif;
+}
+
+html {
+    height: 100vh;
+    width: 100vw;
+
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-image: url(imagens/fundo.jpg);
+    background-size: cover;
+}
+
+main {
+    height: 700px;
+    width: 350px;
+
+}
+
+section#sec1 {
+
+    height: 250px;
+
+    position: relative;
+
+    background-image: radial-gradient(circle farthest-corner at 70% 40%, var(--cor1), var(--cor2), var(--roxoconfirmar));
+
+}
+
+section#sec1 > div {
+    border-radius: 10px;
+}
+
+div#cartao1 {
+    width: 270px;
+    height: 165px;
+    
+    position: absolute;
+    top: 14%;
+    left: 18%;
+    background-color: white;
+    background-image: radial-gradient(circle farthest-corner at bottom right, var(--cinzaclaro), var(--branco));
+}
+div#cartao1 > div#faixa1 {
+    height: 35px;
+
+    margin-top: 15px;
+
+    background-color: var(--cinzafaixa);
+}
+
+div#cartao1 > div#faixa2 {
+    height: 30px;
+    width: 200px;
+    
+    margin-top: 15px;
+    margin-left: 35px;
+
+    display: flex;
+    justify-content: right;
+    align-items: center;
+
+    border-radius: 4px;
+
+    background-color: var(--cinzaescuro);
+}
+
+div#cartao1 > div#faixa2 > p {
+    padding-right: 10px;
+
+    font-size: 0.7em;
+
+    color: white;
+}   
+
+div#cartao2 {
+    width: 270px;
+    height: 165px;
+
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    background-color: black;
+    background-image: url(imagens/card-front.png);
+    background-repeat: no repeat;
+    background-size: cover;
+}
+
+div#cartao2 > div#circ {
+    height: 50px;
+    width: 70px;
+
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-top: 15px;
+    margin-left: 20px;
+
+    background-color: none;
+
+}
+
+div#circ > div#circ1 {
+    height: 40px;
+    width: 40px;
+
+    border-radius: 50%;    
+    background-color: white;
+}
+
+div#circ > div#circ2 {
+    height: 14px;
+    width: 14px;
+
+    border-radius: 50%;
+    border-style: solid;
+    border-color: white;
+    background-color: none;
+}
+
+div#cartao2 > div#cardnum {
+    height: 40px;
+    width: 215px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    position: absolute;
+    top: 55%;
+    margin-left: 25px;
+    background-color: none;
+}
+
+div#cardnum > p {
+    font-size: 1.1em;
+    letter-spacing: 1.1px;
+    
+    color: white;
+}
+
+div#cartao2 > div#namet {
+    height: 35px;
+    width: 225px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    position: absolute;
+    top: 75%;
+    margin-left: 24px;
+
+    background-color: none;
+}
+
+div#namet {
+    font-size: 0.8em;
+
+    color: white;
+}
+
+section#sec2 {
+    height: 449px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+section input {
+    height: 40px;
+    text-align: center;
+
+    font-family: 'Space Grotesk', sans-serif;
+
+    border-radius: 8px;
+    border-color: rgba(211, 211, 211, 0.376);
+    
+}
+section#sec2 > div#dados {
+    height: 350px;
+    width: 295px;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    background-color: none;
+}
+
+div#dados > div#pessoais {
+    height: 150px;
+
+    display: block;
+    background-color: none;
+}
+
+div#dados form > p > label.letras {
+    font-weight: 700;
+    font-size: 0.9em;
+
+    color: var(--roxoconfirmar);
+}
+
+div#pessoais > form > p {
+    margin-top: 13px;
+}
+
+div#pessoais > form > p > input {
+
+    width: 292px;
+
+    margin-top: 5px;
+    text-align: left;
+    text-indent: 5px;
+
+}
+
+div#dados > div#data {
+    height: 100px;
+    
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    
+    background-color: none;
+
+}
+
+div#data > form > p > label {
+    font-size: 0.9em;
+
+}
+
+div#data > form > p > input {
+    margin-top: 5px;
+
+}
+
+div#telaconfirm {
+    height: 295px;
+    width: 295px;
+
+    display: none;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+div#telaconfirm > img {
+    margin-bottom: 30px;
+}
+
+div#telaconfirm > h2#agradec,p#insedados {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div#telaconfirm > h2 {
+    height: 50px;
+    width: 200px;
+
+    margin-bottom: 7px;
+
+    color: var(--roxoconfirmar);
+}
+
+div#telaconfirm > p {
+    height: 25px;
+    width: 250px ;
+
+    margin-bottom: 5px;
+
+    font-weight: bolder;
+    color: var(--cinzaescuro);
+}
+
+div#dados > div#confirm {
+    height: 50px;
+    width: 295px;
+
+    display: flex;
+    justify-content: center;
+    
+
+    background-color: none;
+}
+
+div#dados > div#confirm > button {
+    width: 100%;
+
+    border-radius: 10px;
+    border-style: none;
+
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: bolder;
+
+    color: white;
+
+    background-color: var(--roxoconfirmar);
+}
+
+div#dados > div#confirm > button:hover {
+
+    background-color: var(--roxoescuro);
+    border-style: solid;
+    border-width: 2.5px;
+    border-color: var(--roza);
+    cursor: pointer;
+}

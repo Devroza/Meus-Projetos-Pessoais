@@ -1,0 +1,262 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+:root {
+    /* Cores utilizadas */
+    --roxo: #4A24CF;
+    --azul: #4936F2;
+    --cinzaes: #303B59;
+    --marfim: #d93949;
+    --fmarfim: #FFF6F5;
+    --dourado: #E7C379;
+    --fdourado: #FFFBF2;
+    --verde: #38aa89;
+    --fazul: #F3F3FD;
+    --azul2: #1F2D90;
+    --fverde: #F2FBFA;
+
+    --gradazul: #312CEA;
+    --gradroxa: #6743FF;
+
+    /* Fonte Utilizada */
+
+    --mainfont: 'Lato', sans-serif;
+
+}   
+
+html {
+    height: 100vh;
+    width: 100vw;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    
+    font-family: var(--mainfont);
+}
+
+main {
+    height: 700px;
+    width: 350px;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    border-radius: 25px;
+    box-shadow: 3px 2px 20px var(--azul);
+}
+
+section {
+    height: 290px;
+
+    border-radius: 0px 0px 25px 25px;
+
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    background-image: linear-gradient(to top, var(--gradazul), var(--gradroxa));
+}
+
+section >#res {
+    height: 25px;
+    width: 100px;
+
+    padding-top: 20px;
+    text-align: center;
+
+    color: lightgray;
+
+    background-color: none;
+}
+
+section > div#circ {
+    height: 125px;
+    width: 125px;   
+
+    background-image: linear-gradient(to bottom, var(--roxo), var(--azul));
+
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+div#circ > h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+
+    color: white;
+}
+
+div#circ > p {
+    color: lightgray;
+}
+
+div#infa > h2.otimo {
+    font-size: 1.5em;
+
+    padding-bottom: 10px;
+}
+
+div#infa > .otimo {
+    width: 260px;
+
+    padding-bottom: 20px;
+    text-align: center;
+
+    color: white;
+}
+
+h3.sum{
+    padding-top: 20px ;
+    padding-left: 35px;
+}
+
+div.grid {
+    width: 282px;
+    height: 230px;
+
+    position: absolute;
+    top: 50%;
+    left: 10%;
+
+    background-color: white;
+}
+
+div.topic {
+    width: 282px;
+    height: 48px;
+
+    margin-bottom: 13px;
+
+    border-radius: 10px;
+    background-color: burlywood;
+}
+p.n {
+    color: black;
+}
+div#topic1 {
+
+    background-color: var(--fmarfim);
+}
+
+div#topic2 {
+    
+    background-color: var(--fdourado);
+}
+
+div#topic3 {
+    
+    background-color: var(--fverde);
+}
+
+div#topic4 {
+    
+    background-color: var(--fazul);
+}
+
+#topic1 > p, #topic2 > p, #topic3 > p, #topic4 > p {
+
+    font-weight: 500;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+#topic1 > #p1::before {
+    content: '\1F5F2';
+}
+
+#topic2 > #p2::before {
+    content: '\1F5EC';
+}
+
+#topic3 > #p3::before {
+    content: '\1F5E9';
+}
+
+#topic4 > #p4::before {
+    content: '\1F441';
+}
+
+
+#topic1 > p {
+    color: var(--marfim);
+}
+
+#topic2 > p {
+    color: var(--dourado);
+}
+
+#topic3 > p {
+    color: var(--verde);
+}
+
+#topic4 > p {
+    color: var(--azul2);
+}
+
+p#n1 {
+    color: darkgray;
+}
+
+p#n2 {
+    color: darkgray;
+}
+
+p#n3 {
+    color: darkgray;
+}
+
+p#n4 {
+    color: darkgray;
+}
+
+span.negrito {
+    color: black;
+    font-weight: bolder;
+}
+
+#topic1, #topic2, #topic3, #topic4 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+a {    
+    width: 282px;
+    height: 55px;
+    
+    position: absolute;
+    top: 87%;
+    left: 10%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    border: none;
+    border-radius: 30px;
+
+    background-color: var(--cinzaes);
+
+    text-align: center;
+    font-style: none;
+    text-decoration: none;
+    font-size: 1.1em;
+    color: white
+}

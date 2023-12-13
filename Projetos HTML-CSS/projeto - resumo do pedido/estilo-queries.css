@@ -1,0 +1,49 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 769px) and (max-width: 992px) {
+
+    main {
+        height: 700px;
+        width: 750px;
+
+        background-size: contain;
+    }
+
+    section {
+        width: 350px;
+    }
+
+}
+
+@media screen and (min-width: 993px) {
+
+    main {
+        width: 950px;
+
+        background-size: contain;
+    }
+
+    section {
+        height: 605px;
+        width: 400px;
+    }
+
+    section > div#superior {
+        height: 200px 
+        }
+
+    div#inferior > div#sumario {
+        height: 325px;
+        width: 295px;
+    
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        background-color: white;
+    }
+
+    div#sumario > input:hover {
+        transition-duration: 0.2s;
+    }
+
+}

@@ -1,0 +1,18 @@
+Proximos passos do projeto:
+
+--PRINCIPAIS REQUISITOS DO PROJETO--
+- Inserir um alerta para caso qualquer um dos campos não esteja funcionando(Feito);
+- Codificar para que uma vez que os dados foram inserimos e apagados, os placeholders retornem ao local e os cartões não fiquem em branco(Feito);
+- Mudar o Input do Número do cartão para tipo:Número(Feito)
+- Encontrar alguma forma de limitar a quantidade de caracteres(ou números) de acordo o campo que está sendo preenchido(Feito);
+- Desenvolver as telas de confirmação, tanto da versão mobile quanto da versão screen para desktop e tablet(Feito);
+
+--IDEIAS POSTERIORES --
+- (Ideia) Colocar uma transição de cartões virando de um lado para o outro através do cique nos botões brancos no topo;
+- (ideia) Colocar transição animada para a tela de confirmação.
+
+--com mais conhecimentos backend e banco de dados--
+- (Ideia) Realizar uma validação dos dados do cartão;
+- (Ideia) Realizar uma experiencia de uso de banco digital na atualização de dados do cartão.
+
+

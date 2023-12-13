@@ -1,0 +1,75 @@
+@charset "UTF-8";
+
+/* Setar os Media Queries*/
+
+@media screen and (min-width: 769px) {
+    
+    main {
+        height: 500px;
+        width: 700px;
+
+        display: flex;
+        align-items: left;
+        
+    }
+
+    section {
+
+        height: 100%;
+        width: 50%;
+
+        border-radius: 25px;
+    }
+
+    section >#res {
+        width: 125px;
+        padding-top: 50px;
+        
+        font-size: larger;
+    }
+
+    section > div#circ {
+        height: 200px;
+        width: 200px;   
+    }
+
+    div#circ > h1 {
+        font-size: 4em;
+        font-weight: bolder;
+        margin-bottom: 4px;
+    
+        color: white;
+    }
+
+    div#infa {
+        padding-bottom: 35px;
+    }
+
+    div#infa > h2.otimo {
+        padding-bottom: 18px;
+    }
+
+    div#infa > .otimo {
+        width: 235px;
+    }
+
+    h3.sum {
+        padding-top: 55px;
+        padding-left: 40px;
+
+        font-size: 1.5em;
+    }
+
+    div.grid {
+
+        position: absolute;
+        top: 25%;
+        left: 55%;
+    }
+
+    a {
+        position: absolute;
+        left: 55%;
+        top: 82%;
+    }
+}

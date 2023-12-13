@@ -1,0 +1,75 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 769px) {
+
+    main {
+        height: 500x;
+        width: 750px;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+
+    section#sec1 {
+        height: 100%;
+        width: 300px;
+
+        position: relative;
+    }
+
+    section#sec1 > div#cartao1 {
+        position: absolute;
+
+        top: 55%;
+        left: 25%;
+    }
+
+    div#cartao1 > div#linhas {
+        height: 40px;
+        width: 115px;
+
+        position: absolute;
+        top: 67%;
+        left: 50%;
+        transform: translate(-50%);
+        background-color: none;
+    }   
+
+    div#cartao1 > div#linhas > p {
+        font-size: 0.7em;
+        font-weight: 700;
+
+        margin-top: -5px;
+
+        text-align: center;
+
+        color: darkgray;
+    }
+
+    section#sec2 {
+        height: 100%;
+        width: 450px;
+    }
+
+    section#sec1 > div#cartao2 {
+        position: absolute;
+
+        top: 25%;
+        left: 15%;
+    }
+
+    div#dados > div#confirm > button:hover {
+        cursor: pointer;
+
+        border-style: solid;
+        border-width: 2.5px;
+        border-color: var(--roza);
+        cursor: pointer;
+
+        transition-duration: 0.2s;
+
+        background-color: var(--roxoescuro);
+    }
+}

@@ -1,0 +1,3 @@
+Pelas de Cores:
+Paleta 1: #130A1C, #291D3D, #07C467, #05FB7F, #01fedf;
+Paleta 2: #301840, #9C8DA2, #F29E38, #F2C641, #BDC0F2;

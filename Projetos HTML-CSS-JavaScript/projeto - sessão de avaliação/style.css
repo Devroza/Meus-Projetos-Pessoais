@@ -1,0 +1,210 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+* { 
+    margin: 0px;
+    padding: 0px;
+}
+
+:root {
+    /* - Cores das Letras - */
+    --brancoh2: #FEFFFF;
+    --cinzap: #727a85;
+    --cinzan: #787b7e;
+    --corsubmit: #FFF1CA;
+
+    /* - Cores dos Fundos(Backgrounds)- */
+    --fundobody: #141519;
+    --fundomaingradient-1: #1F2630;
+    --fundomaingradient-2: #171E28;
+    --fundonumeros: #272e39;
+    --fundoestrela: #272e39;
+
+    /* - Cor do Botao - */
+
+    --corbotao: #FC7613;
+
+    /* Fonte utilizada */
+
+    --fonteprincipal: 'Overpass', sans-serif;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: var(--fundobody);
+}
+
+main {
+    height: 370px;
+    width: 350px;
+
+    font-family:var(--fonteprincipal) ;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 20px;
+
+    background-image: linear-gradient(to bottom, var(--fundomaingradient-1), var(--fundomaingradient-2));
+}
+
+section {
+    height: 325px;
+    width: 300px;
+
+    background-color: none;
+}
+
+section > div#imagem {
+    padding-bottom: 18px;
+    background-color: none;
+    display: block;
+}
+
+div#imagem > div#fundo-estrela {
+    height: 40px;
+    width: 40px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 50%;
+
+    background-color: var(--fundoestrela);
+}
+
+section > div#textos {
+    padding-bottom: 5px;
+    display: block;
+}
+
+div#textos > h2 {
+    padding-bottom: 8px;
+    
+    color: var(--brancoh2);
+}
+
+div#textos > p {
+    color: var(--cinzap);
+}
+
+section > div#avaliacao {
+    height: 135px;
+    width: 100%;
+    
+    background-color: none;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+div#avaliacao > div#notas {
+    height: 50px;
+    background-color: none;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+div#notas > div.nota {
+    height: 40px;
+    width: 40px;
+
+    text-align: center;
+    font-weight: bold;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 50%;
+
+    color: var(--cinzan);
+    background-color: var(--fundonumeros);
+}
+
+div#notas > div.nota:hover {
+    cursor: pointer;
+    color: white;
+    background-color: var(--corbotao);
+}
+
+div#avaliacao > input#botao-enviar {
+    margin-top: 17px;
+    height: 44px;
+
+    font-weight: bolder;
+    letter-spacing: 2px;
+
+    border-radius: 25px;
+
+    color: var(--corsubmit);
+
+    border-style: none;
+    background-color: var(--corbotao);
+} 
+
+div#avaliacao > input#botao-enviar:hover {
+    color: var(--corbotao);
+    cursor: pointer;
+    background-color: white;
+}
+
+section > div#agradecimento {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+div#agradecimento > img {
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+
+div#agradecimento > div#nota-final {
+    padding-bottom: 25px;
+}
+
+div#agradecimento > div#nota-final > p {
+    height: 30px;
+    width: 240px;
+    padding-top: 5px;
+
+    text-align: center;
+
+    box-sizing: border-box;
+    border-radius: 15px;
+
+    color: var(--corbotao);
+    background-color: var(--fundoestrela);
+}
+
+div#agradecimento > div#textos-finais {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+div#textos-finais > h3 {
+    padding-bottom: 15px;
+    color: var(--brancoh2);
+}
+
+div#textos-finais > p {
+    text-align: center;
+    color: var(--cinzap);
+}

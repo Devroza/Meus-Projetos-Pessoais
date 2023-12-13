@@ -1,0 +1,4 @@
+Proximos passos do projeto:
+
+- Terminar as querryes de cada tamanho de tela;
+- Codar o Script das mensagens e outros elementos.
