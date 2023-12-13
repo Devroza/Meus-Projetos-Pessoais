@@ -1,6 +1,7 @@
 # Meus-Projetos-Pessoais
  Repositório de Projetos Pessoais
- ![image](https://github.com/Devroza/Meus-Projetos-Pessoais/assets/124314801/f4a89550-f2c2-465b-a86e-b8fd64bb38d7)
+ ![image](https://github.com/Devroza/Meus-Projetos-Pessoais/assets/124314801/4231049e-37e1-400b-bc69-75220a33fd48)
+
 
  Projetos Baseados em Desafios de Plataformas como: Frontend Mentor, Codepen, entre outros.
  Projetos Realizados para testar minhas capacidades como dev e programador.<br>
